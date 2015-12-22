@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@drawable/icon2"
+    >
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="20dip"
+    android:text="@string/name"
+    android:gravity="left"
+	android:textColor="@color/black"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    />
+ <EditText
+ 	android:id="@+id/username"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	android:layout_marginLeft="20dip"
+ 	android:layout_marginRight="20dip"
+ 	android:scrollHorizontally="true"
+ 	android:background="@color/bright"
+ 	android:autoText="false"
+ 	android:singleLine="true"
+ 	android:capitalize="none"
+ 	android:hint="@string/hint1"
+ 	android:gravity="fill_horizontal"
+ 	android:textAppearance="?android:attr/textAppearanceMedium"
+ 	/>
+ <TextView 
+ 	android:id="@+id/textView1"
+ 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+ 	android:text="@string/secret"
+	android:layout_marginLeft="20dip"
+	android:textColor="@color/black"
+	android:textAppearance="?android:attr/textAppearanceMedium" 		 
+ />
+ <EditText
+ 	android:id="@+id/passw"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	android:layout_marginLeft="20dip"
+ 	android:layout_marginRight="20dip"
+ 	android:scrollHorizontally="true"
+ 	android:autoText="false"
+ 	android:singleLine="true"
+ 	android:password="true"
+ 	android:background="@color/bright"
+ 	android:capitalize="none"
+ 	android:hint="@string/hint2"
+ 	android:gravity="fill_horizontal"
+ 	android:textAppearance="?android:attr/textAppearanceMedium"
+ 	/>
+<TextView 
+	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	android:layout_marginLeft="20dip"
+	android:text="@string/spinner"
+	android:textColor="@color/black"
+	android:textAppearance="?android:attr/textAppearanceMedium" 		 
+ 	></TextView>
+<Spinner
+	android:id="@+id/apinner"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="20dip"
+	android:layout_marginRight="20dip"
+	android:background="@color/bright"
+	android:layout_centerHorizontal="true"
+	android:scrollbars="vertical"
+	android:fadingEdge="vertical"
+	/>
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+ <Button
+ 	android:id="@+id/button00"
+ 	android:text="@string/confirm"
+ 	android:layout_below="@id/username"
+ 	android:background="@color/bright"
+ 	android:layout_width="wrap_content" android:layout_height="wrap_content"
+ 	android:layout_marginLeft="20dip"
+ 	android:textAppearance="?android:attr/textAppearanceMedium"
+ 	/>
+ <Button
+ 	android:id="@+id/button01"
+ 	android:text="@string/cancel"
+ 	android:layout_toRightOf="@id/button00"
+ 	android:layout_width="wrap_content" android:layout_height="wrap_content"
+ 	android:layout_marginLeft="20dip"
+ 	android:background="@color/bright"
+ 	android:textAppearance="?android:attr/textAppearanceMedium"
+ 	/>
+ 	</RelativeLayout>
+ 	</LinearLayout>
